@@ -1,0 +1,30 @@
+[
+  {
+    "body": "INTENCION: hoy no hay forma de medir el formato nuevo sin crearlo\nACEPTACION: el cuerpo se lee entero; los criterios llegan como lineas\nACEPTACION: el bloque de estado se puede reescribir sin tocar lo de arriba\nSENAL: exenta - spike de medicion\n\n<!-- slice-runner:estado\n{\"step\": \"await-ci\", \"control_retries\": 1, \"verify_retries\": 0, \"ci_retries\": 0, \"indeterminate_ticks\": 2, \"verify_discards\": 0}\n-->\n",
+    "labels": [
+      {
+        "id": "LA_kwDOThEBoM8AAAACu6gVcw",
+        "name": "estado:en-curso",
+        "description": "spike, borrar",
+        "color": "1d76db"
+      }
+    ],
+    "number": 50,
+    "state": "CLOSED",
+    "title": "slice-01 (primera-de-prueba): la que se creo despues"
+  },
+  {
+    "body": "REPO: alcaptar/otro-repo\nINTENCION: comprobar que el orden sale del titulo y no de la interfaz de programacion\nACEPTACION: se ordena por slice-NN aunque la api la devuelva antes\nSENAL: exenta - spike de medicion\n",
+    "labels": [
+      {
+        "id": "LA_kwDOThEBoM8AAAACu6gVrg",
+        "name": "estado:pendiente",
+        "description": "spike, borrar",
+        "color": "ededed"
+      }
+    ],
+    "number": 49,
+    "state": "OPEN",
+    "title": "slice-02 (segunda-de-prueba): la que se creo primero a proposito"
+  }
+]

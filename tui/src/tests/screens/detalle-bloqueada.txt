@@ -1,0 +1,24 @@
+┌ 04 la-vista-de-detalle-sin-entendimiento ────────────────────────────────────┐
+│ ✕ bloqueada: controles · run-controls                                        │
+│ hace 41m · 18m en total · $3.10 de $50                                       │
+│                                                                              │
+│ mnt ■  imp ■²  ctl ✕²  ver ·  pr ·  ci ·  mrg ·                              │
+│ controles 2/2 · higiene 0/2 · juez 0/2                                       │
+│ ci 0/1 · ci indeterminada 0/10 · puesta al día 0/3                           │
+│                                                                              │
+│ HISTORIA                                                                     │
+│ hace 59m  implementa, vuelta 1                                            8m │
+│ hace 51m  corre los controles, vuelta 1                                   2m │
+│ hace 49m  controles en rojo: implementa, vuelta 2                         6m │
+│ hace 43m  corre los controles, vuelta 2                                   2m │
+│ hace 41m  ✕ bloqueada: controles, sin vueltas que queden                     │
+│                                                                              │
+│ Para reabrirla:                                                              │
+│ slice-runner retry 529 --repo alcaptar/demo-workspace "<instrucción>"        │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│ esc volver · ctrl+q claude                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘

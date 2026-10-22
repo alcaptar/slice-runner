@@ -1,0 +1,34 @@
+{
+  "comments": [
+    {
+      "id": "IC_kwDOThEBoM8AAAABNwLxTA",
+      "author": {
+        "login": "alcaptar"
+      },
+      "authorAssociation": "OWNER",
+      "body": "asi entiendo la slice-10\n\nPara continuar, responde a este comentario:\n\n- `-GO` arranca la implementacion tal como queda descrita arriba.\n- `-REVIEW <correccion>` vuelve a redactar el entendimiento con esa correccion y lo publica de nuevo.\n\nSin respuesta la slice se queda esperando: reinvocar no vuelve a publicar el entendimiento.\n\n<!-- slice-runner:entendimiento -->\n",
+      "createdAt": "2026-08-07T13:51:15Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/alcaptar/slice-runner/issues/100#issuecomment-5217907020",
+      "viewerDidAuthor": true
+    },
+    {
+      "id": "IC_kwDOThEBoM8AAAABNwLyDQ",
+      "author": {
+        "login": "alcaptar"
+      },
+      "authorAssociation": "OWNER",
+      "body": "-GO",
+      "createdAt": "2026-08-07T13:51:16Z",
+      "includesCreatedEdit": false,
+      "isMinimized": false,
+      "minimizedReason": "",
+      "reactionGroups": [],
+      "url": "https://github.com/alcaptar/slice-runner/issues/100#issuecomment-5217907213",
+      "viewerDidAuthor": true
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "body": "## Intencion\nSpike de medicion del formato de subissues. Este issue se borra al terminar.\n\n## Fuentes de convencion\n- doc: CLAUDE.md\n\n### alcaptar/otro-repo\n- doc: templates/CLAUDE.md\n\n## Controles\n- lint: make linting\n- tests: make test\n\n### alcaptar/otro-repo\n- ninguno: la integracion continua solo publica en master\n",
+  "subIssuesSummary": {
+    "completed": 1,
+    "percentCompleted": 50,
+    "total": 2
+  },
+  "state": "OPEN"
+}

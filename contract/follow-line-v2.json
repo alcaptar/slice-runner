@@ -1,0 +1,527 @@
+{
+  "optional": [
+    "parent",
+    "name",
+    "reason",
+    "step",
+    "round_without_changes",
+    "pull_request",
+    "comparison",
+    "pid"
+  ],
+  "examples": [
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767268800000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "parent": 140,
+      "slice_id": "slice-05",
+      "name": "follow-speaks-json",
+      "standing": "pending",
+      "rounds": {
+        "controls": {
+          "used": 0,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 0,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "cost_usd": 0.0,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767268860000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "parent": 140,
+      "slice_id": "slice-05",
+      "name": "follow-speaks-json",
+      "standing": "in-progress",
+      "step": "run-controls",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 0,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "pid": 48213,
+      "cost_usd": 0.3433209,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767269400000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "parent": 140,
+      "slice_id": "slice-05",
+      "name": "follow-speaks-json",
+      "standing": "awaiting-merge",
+      "step": "await-merge",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 1,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "pull_request": 151,
+      "comparison": "/Users/someone/repos/slice-runner/.worktrees/05-follow-speaks-json/.design-captures/comparison.html",
+      "pid": 48213,
+      "cost_usd": 4.1207,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270000000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "parent": 140,
+      "slice_id": "slice-05",
+      "name": "follow-speaks-json",
+      "standing": "merged",
+      "step": "await-merge",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 1,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "pull_request": 151,
+      "cost_usd": 4.1207,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270060000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 151,
+      "slice_id": "slice-01",
+      "standing": "blocked",
+      "reason": "controls",
+      "step": "run-controls",
+      "rounds": {
+        "controls": {
+          "used": 3,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 0,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "cost_usd": 6.5,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270120000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 152,
+      "slice_id": "slice-01",
+      "standing": "blocked",
+      "reason": "judge",
+      "step": "verify",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 3,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "round_without_changes": true,
+      "cost_usd": 12.75,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270180000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 153,
+      "slice_id": "slice-02",
+      "standing": "blocked",
+      "reason": "ci-red",
+      "step": "await-ci",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 5,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "pull_request": 160,
+      "cost_usd": 8.0,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270240000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 154,
+      "slice_id": "slice-02",
+      "standing": "blocked",
+      "reason": "ci-indeterminate",
+      "step": "await-ci",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 1,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 2,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "pull_request": 161,
+      "cost_usd": 8.0,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270300000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 155,
+      "slice_id": "slice-03",
+      "standing": "blocked",
+      "reason": "ci-conflict",
+      "step": "catch-up",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 1,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 2,
+          "limit": 2
+        }
+      },
+      "pull_request": 162,
+      "cost_usd": 9.25,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270360000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 156,
+      "slice_id": "slice-03",
+      "standing": "blocked",
+      "reason": "worktree",
+      "step": "mount-worktree",
+      "rounds": {
+        "controls": {
+          "used": 0,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 0,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "cost_usd": 0.0,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270420000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 157,
+      "slice_id": "slice-04",
+      "standing": "aborted",
+      "reason": "budget",
+      "step": "implement",
+      "rounds": {
+        "controls": {
+          "used": 2,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 2,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "cost_usd": 50.4,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "transition",
+      "ts": 1767270480000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 158,
+      "slice_id": "slice-04",
+      "standing": "aborted",
+      "reason": "unmeasured-call",
+      "step": "verify",
+      "rounds": {
+        "controls": {
+          "used": 1,
+          "limit": 3
+        },
+        "hygiene": {
+          "used": 0,
+          "limit": 2
+        },
+        "judge": {
+          "used": 1,
+          "limit": 3
+        },
+        "ci": {
+          "used": 0,
+          "limit": 5
+        },
+        "ci_indeterminate": {
+          "used": 0,
+          "limit": 2
+        },
+        "catch_up": {
+          "used": 0,
+          "limit": 2
+        }
+      },
+      "cost_usd": 7.0,
+      "budget_usd": 50.0
+    },
+    {
+      "version": 2,
+      "kind": "activity",
+      "ts": 1767268920000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "slice_id": "slice-05",
+      "actor": "implementer",
+      "tool": "Edit",
+      "target": "src/slice_runner/domain/closure.py"
+    },
+    {
+      "version": 2,
+      "kind": "activity",
+      "ts": 1767269100000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "slice_id": "slice-05",
+      "actor": "judge",
+      "tool": "Read",
+      "target": "contract/follow-line-v2.json"
+    },
+    {
+      "version": 2,
+      "kind": "activity",
+      "ts": 1767269160000,
+      "repo": "alcaptar/slice-runner",
+      "issue": 150,
+      "slice_id": "slice-05",
+      "actor": "controls",
+      "tool": "lint",
+      "target": "make linting"
+    }
+  ]
+}

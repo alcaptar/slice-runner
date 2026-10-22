@@ -1,0 +1,21 @@
+{
+  "examples": [
+    {
+      "captures": [
+        {
+          "design": "tablero",
+          "state": "tablero a 80 columnas con dos slices en curso",
+          "file": "tablero.html"
+        },
+        {
+          "design": "detalle",
+          "state": "detalle de una slice con un hallazgo",
+          "file": "detalle.html"
+        }
+      ]
+    },
+    {
+      "missing": "el entorno de este repo no puede dibujar la pantalla sin un terminal"
+    }
+  ]
+}

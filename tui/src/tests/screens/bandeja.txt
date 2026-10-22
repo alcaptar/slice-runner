@@ -1,0 +1,24 @@
+┌ #525 las slices dejan de abrir transacciones · 2 te necesitan ───────────────┐
+│ alcaptar/demo-workspace                                     6 slices · $55.84│
+│                                                                              │
+│ TE NECESITA (2)                                                              │
+│>◆ 01 las-decisiones-viajan-en-la-spec         esperando merge · #544 · 3h 12m│
+│ ✕ 04 la-vista-de-detalle-sin-entendimiento         bloqueada: controles · 41m│
+│                                                                              │
+│ EN MARCHA (2)                                                                │
+│ ◐ 02 las-decisiones-sustituyen-al-entendimiento        verify · juez 1/2 · 6m│
+│ ◐ 03 el-juez-mide-contra-las-decisiones               implement · 2m · $42/50│
+│                                                                              │
+│ PENDIENTES (1)                                                               │
+│ ○ 05 adios-al-entendimiento                                         pendiente│
+│                                                                              │
+│ TERMINADAS (1)                                                               │
+│ ✓ 06 el-diseno-se-decide-en-slice-spec                   mergeada · #541 · 1d│
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+ ↑↓ mover · enter detalle · ctrl+q claude                                       

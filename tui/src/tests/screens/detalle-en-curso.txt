@@ -1,0 +1,24 @@
+┌ 02 las-decisiones-sustituyen-al-entendimiento ───────────────────────────────┐
+│ ◐ en curso · verify                                                          │
+│ hace 6m · 23m en total · $1.84 de $50                                        │
+│                                                                              │
+│ mnt ■  imp ■²  ctl ■²  ver ▶²  pr ·  ci ·  mrg ·                             │
+│ controles 0/2 · higiene 0/2 · juez 1/2                                       │
+│ ci 0/1 · ci indeterminada 0/10 · puesta al día 0/3                           │
+│                                                                              │
+│ QUÉ HACE EL JUEZ AHORA                                                       │
+│ hace 32s  Read  src/slice_runner/domain/precheck_outcome.py                  │
+│ hace 28s  Read  src/slice_runner/domain/sub_issue.py                         │
+│ hace 21s  Grep  MISSING_DECISIONS src/                                       │
+│ hace 15s  Bash  git diff --stat origin/master                                │
+│ hace 8s   Read  src/slice_runner/tests/mothers/sub_issue_mother.py           │
+│                                                                              │
+│ HISTORIA                                                                     │
+│ hace 23m  implementa, vuelta 1                                            8m │
+│ hace 15m  corre los controles, vuelta 1                                   2m │
+│ hace 13m  el juez revisa, vuelta 1                                        3m │
+│ hace 10m  el juez la devuelve: implementa, vuelta 2                       2m │
+│ hace 8m   corre los controles, vuelta 2                                   2m │
+│ hace 6m   ◐ el juez revisa, vuelta 2                                         │
+│ esc volver · ctrl+q claude                                                   │
+└──────────────────────────────────────────────────────────────────────────────┘

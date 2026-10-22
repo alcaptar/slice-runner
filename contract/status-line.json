@@ -1,0 +1,22 @@
+{
+  "optional": ["label", "cost_usd", "pull_request"],
+  "examples": [
+    {
+      "version": 1,
+      "slice_id": "slice-03",
+      "name": "una-feature-se-lee-entera",
+      "issue": 473,
+      "label": "estado:esperando-merge",
+      "closed": false,
+      "cost_usd": 1.2345,
+      "pull_request": 480
+    },
+    {
+      "version": 1,
+      "slice_id": "slice-07",
+      "name": "el-panel",
+      "issue": 477,
+      "closed": false
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+name: check
+
+# La vara que los issues de este repo declaran (`make linting`, `make check-types`, `make test`,
+# o sea `make check`) medida donde se decide mergear: SIN filtro de `paths`, para que ninguna PR
+# llegue al merge sin checks. Nacio porque el unico workflow de entonces estaba filtrado por
+# rutas, asi que el resto de las PRs no tenia CI y `slice-runner` cerraba en
+# `bloqueada: ci-indeterminada` slices sanas. Aquel workflow se retiro con su proyecto el 2026-08-28;
+# este quedo como el unico, y sigue sin filtro por el mismo motivo.
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      # Sin `python-version`: `requires-python` de `pyproject.toml` ya lo declara y uv lo resuelve.
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+      # El `uv run` de cada target del Makefile instala el grupo `dev` la primera vez.
+      - run: make check
+      - run: rustup toolchain install
+        working-directory: tui
+      - run: make tui-lint tui-format tui-test

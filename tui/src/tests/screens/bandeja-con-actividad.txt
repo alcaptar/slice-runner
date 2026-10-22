@@ -1,0 +1,24 @@
+┌ #525 las slices dejan de abrir transacciones · 3 te necesitan ───────────────┐
+│ alcaptar/demo-workspace                                     6 slices · $55.84│
+│                                                                              │
+│ TE NECESITA (3)                                                              │
+│>◆ 01 las-decisiones-viajan-en-la-spec         esperando merge · #544 · 3h 12m│
+│ ● 03 el-juez-mide-contra-las-decisiones            implement · proceso muerto│
+│ ✕ 04 la-vista-de-detalle-sin-entendimiento         bloqueada: controles · 41m│
+│                                                                              │
+│ EN MARCHA (1)                                                                │
+│ ◐ 02 las-decisiones-sustituyen-al-entendimiento        verify · juez 1/2 · 6m│
+│     Read src/slice_runner/tests/mothers/sub_issue_mother.py                  │
+│                                                                              │
+│ PENDIENTES (1)                                                               │
+│ ○ 05 adios-al-entendimiento                                         pendiente│
+│                                                                              │
+│ TERMINADAS (1)                                                               │
+│ ✓ 06 el-diseno-se-decide-en-slice-spec                   mergeada · #541 · 1d│
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+│                                                                              │
+└──────────────────────────────────────────────────────────────────────────────┘
+ ↑↓ mover · enter detalle · ctrl+q claude                                       

@@ -1,0 +1,6 @@
+{
+  "marker": "<!-- slice-runner:workspace <uuid> -->",
+  "examples": [
+    "<!-- slice-runner:workspace 3f2b8c1e-5a7d-4e90-9b6a-1c2d3e4f5a6b -->"
+  ]
+}

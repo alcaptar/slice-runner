@@ -1,0 +1,47 @@
+name: publish-release
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+env:
+  GH_TOKEN: ${{ github.token }}
+  TAG: ${{ github.event.release.tag_name }}
+
+jobs:
+  wheel:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - uses: astral-sh/setup-uv@d4b2f3b6ecc6e67c4457f6d3e41ec42d3d0fcb86 # v5
+      - run: uv build --wheel --out-dir dist
+      - run: gh release upload "$TAG" "dist/slice_runner-${TAG#v}-py3-none-any.whl" --repo "$GITHUB_REPOSITORY"
+
+  installer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: gh release upload "$TAG" install.sh --repo "$GITHUB_REPOSITORY"
+
+  tui:
+    runs-on: ${{ matrix.runner }}
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - target: aarch64-apple-darwin
+            runner: macos-latest
+          - target: x86_64-unknown-linux-gnu
+            runner: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - run: rustup toolchain install
+        working-directory: tui
+      - run: cargo build --release --locked
+        working-directory: tui
+      - run: |
+          cp tui/target/release/slice-runner-tui "slice-runner-tui-${{ matrix.target }}"
+          gh release upload "$TAG" "slice-runner-tui-${{ matrix.target }}" --repo "$GITHUB_REPOSITORY"
